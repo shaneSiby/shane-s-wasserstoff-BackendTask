@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "e51637b5-59e6-4a80-ba74-b5264a8a171a",
+		"name": "load balancer test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32359592"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/fifo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"info\": {\r\n        \"_postman_id\": \"5d1e51cf-7897-4e10-81e2-316cefb8a70f\",\r\n        \"name\": \"Express Queue Management\",\r\n        \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"\r\n    },\r\n    \"item\": [\r\n        {\r\n            \"name\": \"FIFO Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/fifo\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"fifo\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Priority-Based Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [\r\n                    {\r\n                        \"key\": \"priority\",\r\n                        \"value\": \"1\"\r\n                    }\r\n                ],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/priority\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"priority\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Round-Robin Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/roundrobin\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"roundrobin\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/fifo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"fifo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/roundrobin",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"info\": {\r\n        \"_postman_id\": \"5d1e51cf-7897-4e10-81e2-316cefb8a70f\",\r\n        \"name\": \"Express Queue Management\",\r\n        \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"\r\n    },\r\n    \"item\": [\r\n        {\r\n            \"name\": \"FIFO Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/fifo\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"fifo\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Priority-Based Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [\r\n                    {\r\n                        \"key\": \"priority\",\r\n                        \"value\": \"1\"\r\n                    }\r\n                ],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/priority\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"priority\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Round-Robin Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/roundrobin\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"roundrobin\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/roundrobin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"roundrobin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/priority",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"info\": {\r\n        \"_postman_id\": \"5d1e51cf-7897-4e10-81e2-316cefb8a70f\",\r\n        \"name\": \"Express Queue Management\",\r\n        \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\"\r\n    },\r\n    \"item\": [\r\n        {\r\n            \"name\": \"FIFO Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/fifo\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"fifo\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Priority-Based Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [\r\n                    {\r\n                        \"key\": \"priority\",\r\n                        \"value\": \"1\"\r\n                    }\r\n                ],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/priority\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"priority\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        },\r\n        {\r\n            \"name\": \"Round-Robin Queue Management\",\r\n            \"request\": {\r\n                \"method\": \"GET\",\r\n                \"header\": [],\r\n                \"body\": {},\r\n                \"url\": {\r\n                    \"raw\": \"http://localhost:3000/roundrobin\",\r\n                    \"protocol\": \"http\",\r\n                    \"host\": [\r\n                        \"localhost\"\r\n                    ],\r\n                    \"port\": \"3000\",\r\n                    \"path\": [\r\n                        \"roundrobin\"\r\n                    ]\r\n                }\r\n            },\r\n            \"response\": []\r\n        }\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/priority",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"priority"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
